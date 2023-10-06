@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de NPS</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <label>Em uma escala de 0 a 10, o quanto você recomendaria nosso serviço a um amigo ou colega?</label>
+        
+        <div class="radio-container">
+            <label>
+                <input type="radio" name="nps-score" value="0"> 0
+            </label>
+            <label>
+                <input type="radio" name="nps-score" value="1"> 1
+            </label>
+            <label>
+                <input type="radio" name="nps-score" value="2"> 2
+            </label>
+            <label>
+                <input type="radio" name="nps-score" value="3"> 3
+            </label>
+            <label>
+                <input type="radio" name="nps-score" value="4"> 4
+            </label>
+            <label>
+                <input type="radio" name="nps-score" value="5"> 5
+            </label>
+            <label>
+                <input type="radio" name="nps-score" value="6"> 6
+            </label>
+            <label>
+                <input type="radio" name="nps-score" value="7"> 7
+            </label>
+            <label>
+                <input type="radio" name="nps-score" value="8"> 8
+            </label>
+            <label>
+                <input type="radio" name="nps-score" value="9"> 9
+            </label>
+            <label>
+                <input type="radio" name="nps-score" value="10"> 10
+            </label>
+        </div>
+    </form>
+
+    <table id="summary-table">
+        <tr>
+            <td>NPS</td>
+            <td id="nps">0</td>
+        </tr>
+
+        <tr>
+            <td>Média</td>
+            <td id="average">0.0</td>
+        </tr>
+
+        <tr class="promoter">
+            <td>Promotores</td>
+            <td id="promoters">0 (0%)</td>
+        </tr>
+
+        <tr class="passive">
+            <td>Passivos</td>
+            <td id="passives">0 (0%)</td>
+        </tr>
+
+        <tr class="detractor">
+            <td>Detratores</td>
+            <td id="detractors">0 (0%)</td>
+        </tr>
+    </table>
+
+    <div id="score-list">
+        <div class="score-card">
+            <div class="score-header detractor">0</div>
+            <div id="zero" class="score-body">0</div>
+        </div>
+
+        <div class="score-card">
+            <div class="score-header detractor">1</div>
+            <div id="one" class="score-body">0</div>
+        </div>
+
+        <div class="score-card">
+            <div class="score-header detractor">2</div>
+            <div id="two" class="score-body">0</div>
+        </div>
+
+        <div class="score-card">
+            <div class="score-header detractor">3</div>
+            <div id="three" class="score-body">0</div>
+        </div>
+
+        <div class="score-card">
+            <div class="score-header detractor">4</div>
+            <div id="four" class="score-body">0</div>
+        </div>
+
+        <div class="score-card">
+            <div class="score-header detractor">5</div>
+            <div id="five" class="score-body">0</div>
+        </div>
+
+        <div class="score-card">
+            <div class="score-header detractor">6</div>
+            <div id="six" class="score-body">0</div>
+        </div>
+
+        <div class="score-card">
+            <div class="score-header passive">7</div>
+            <div id="seven" class="score-body">0</div>
+        </div>
+
+        <div class="score-card">
+            <div class="score-header passive">8</div>
+            <div id="eight" class="score-body">0</div>
+        </div>
+
+        <div class="score-card">
+            <div class="score-header promoter">9</div>
+            <div id="nine" class="score-body">0</div>
+        </div>
+
+        <div class="score-card">
+            <div class="score-header promoter">10</div>
+            <div id="ten" class="score-body">0</div>
+        </div>
+    </div>
+
+    <script src="nps.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.radio-container input {
+    display: none;
+}
+
+.radio-container label {
+    padding: 15px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+table {
+    width: 50%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-size: 1.2em;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+tr:first-child {
+    font-weight: bolder;
+}
+
+#score-list {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.score-card {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    border: 1px solid #ddd;
+}
+
+.score-header {
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.score-body {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.detractor {
+    background-color: #f8d7da;
+}
+
+.passive {
+    background-color: #fff3cd;
+}
+
+.promoter {
+    background-color: #d4edda;
+}
